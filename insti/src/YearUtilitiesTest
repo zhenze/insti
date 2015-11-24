@@ -1,0 +1,35 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+
+public class textislept {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+	}
+
+	@Test
+	public void test() {
+		YearUtilities YearUtilities = new YearUtilities();
+		System.out.println("***********************");
+		System.out.println("***********************");
+		//nose perque es posen els * pero bueno 
+		System.out.println("***********************");
+		System.out.println("el año 4 es Leap");
+		assertTrue(YearUtilities.isLeap(4));
+		System.out.println("el año 100 no es Leap");
+		assertFalse(YearUtilities.isLeap(100));
+		System.out.println("el año 2007 no es Leap");
+		assertFalse(YearUtilities.isLeap(2007));
+		System.out.println("el año 2008 es Leap");
+		assertTrue(YearUtilities.isLeap(2008));
+	}
+
+}
